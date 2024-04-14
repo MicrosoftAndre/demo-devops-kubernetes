@@ -56,7 +56,7 @@ stages:
               steps:
                 - download: current
                   artifact: manifests
-                - task: KubernetesManifest@1s
+                - task: KubernetesManifest@1
                   displayName: Create imagePullSecret
                   inputs:
                     action: createSecret
